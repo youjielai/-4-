@@ -1,0 +1,416 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+body{
+  font-family:Microsoft JhengHei ;
+}
+.container{
+	max-width: 940px;
+	margin: 0 auto;
+}
+.header{
+	display: flex;
+  justify-content: space-between;
+	margin: 30px 0px;
+}
+.burgericon{
+	display: none;
+}
+.logo{
+	display: block;
+	background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logo-all-dark.svg");
+	text-indent:101%;
+  overflow: hidden;
+	white-space:nowrap;
+  width: 220px;
+	height: 40px;
+  background-repeat: no-repeat;
+}
+.header ul{
+  display:flex;
+  font-weight:bolder;
+  margin: 0px 60px 0px auto;
+}
+.header li {
+  display: block;
+  font-size:16px;
+  margin-left:60px;
+  padding-top:10px;
+  padding-bottom:8px;
+  line-height: 22px;
+}
+.header li a{
+  display: block;
+  text-decoration:none;
+  color: #3F5D45;
+  display: block;
+}
+.header li a:hover{
+  text-decoration:underline;
+  color:#77b182;
+}
+.shoppingcart {
+  padding: 5px;
+}
+.banner img{
+  margin-bottom:60px;
+}
+.main{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  margin-bottom:40px;
+}
+.category{
+  font-size: 24px;
+  width: 33%;
+  line-height: 40px;
+  font-weight: bolder;
+  text-align: center;
+}
+.category h2{
+  background: #3F5D45;
+  color: white;
+  padding:16px 0;
+}
+.category li{
+  border: 1px solid #EAF0ED;
+}
+.category li a{
+  padding:16px 0;
+  display:block;
+  text-decoration:none;
+  color: #3F5D45;
+}
+.category li a:hover{
+  background: #EAF0ED;
+}
+.products{
+  width: 66%;
+}
+.products ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.products li{
+  margin-bottom:20px;
+  position: relative;
+}
+.fav{
+  position: absolute;
+  right: 22px;
+  top: 19px;
+}
+.fav:hover{
+  background-color:#eb1b7c;
+}
+.tag{
+  position: absolute;
+  left: 20px;
+  top:0;
+  background: #3F5D45;
+  width: 16px;
+  height: 87.4px;
+  padding:10.08px 10px 9.24px 10px;
+  color: #EAF0ED;
+  font-size:16px;
+  line-height: 20px;
+  writing-mode: lr;
+}
+.item{
+  color: #3F5D45;
+  font-size:20px;
+  display:flex;
+}
+.name{
+  width: 105px;
+  line-height: 20px;
+  padding:14px 33px;
+  border: 1px solid #EAF0ED;
+}
+.price{
+  font-weight:bolder;
+  line-height: 24px;
+  padding:14px 20px 14px 25px;
+  border: 1px solid #EAF0ED;
+}
+.cart-btn{
+  display: block;
+  color: #3F5D45;
+  font-size:24px;
+  text-decoration:none;
+  background: #EAF0ED;
+  font-weight: bolder;
+  padding: 16px 90px;
+}
+.cart-btn:hover{
+  color: #EAF0ED;
+  background: #3F5D45;
+}
+.page{
+  margin-top: 10px;
+}
+.page ul{
+  display:flex;
+  justify-content:flex-end;
+}
+.page li{
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-decoration:none;
+  border: 1px solid #EAF0ED;
+}
+.page li a{
+  text-decoration:none;
+}
+.arrow {
+  display: block;
+  padding: 18px;
+}
+.arrow:hover{
+  background: #EAF0ED;
+}
+.pagenumber{
+  display: block;
+  font-size: 20px; 
+  height: 28px;
+  color: #3F5D45;
+  padding: 16px 24px;
+}
+.pagenumber:hover{
+  color: #EAF0ED;
+  background: #3F5D45;
+}
+.footer-email {
+  padding: 30px 122px;
+  background: #3F5D45;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.email-text{
+  display: flex;
+  align-items: center;
+}
+.email-text img{
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+.email-text p{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EAF0ED;
+}
+.email-enter{
+  background: #EAF0ED;
+  width: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.email-enter img{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 16px;
+}
+.email-enter input{
+  background: #EAF0ED;
+  border: none;
+  width: 220px;
+  padding: 16px;
+  margin-left: 56px
+}
+.btn{
+  width: 64px;
+  height: 56px;
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true);
+  background-color: #FFE180;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  display: block;
+  cursor: pointer;
+}
+.footer-info{
+  background-color: #EAF0ED;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 122px;
+}
+.footerLogo {
+  display: block;
+  max-width: 171px;
+  margin-bottom: 115px;
+}
+.info-message ul {
+  margin-bottom: 30px;
+}
+.info-message li {
+  font-size: 16px;
+  line-height: 24px;
+  color: #3F5D45;
+}
+.footerLinks{
+  display: flex;
+  margin-top: 30px;
+}
+.footerLinks a {
+  display: block;
+  margin-right: 10px;
+}
+.footerLinks img {
+  width: 32px;
+  height: 32px;
+}
+.info-copyright h2{
+  writing-mode: vertical-rl;
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing:6px;
+  color: #3F5D45;
+  float: right;
+}
+.info-copyright p {
+  color: #3F5D45;
+  clear: both;
+}
+
+@media(max-width:768px){
+ .container{
+   max-width: 768px;
+ }
+ .header{
+   padding: 0px 30px;
+ }
+ .burgericon{
+   display: block;
+   padding: 5px;
+ }
+ .logo{
+   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/student-week1/logotype-sm-dark.svg);
+   width: 116px;
+   height: 20px;
+   margin-top: 7px;
+ }
+ .header ul{
+   display:none;
+ }
+.banner img{
+   margin-bottom: 0px;
+}
+.main{
+   justify-content: center;
+}
+.category{
+   width: 100%;
+   margin-bottom: 30px;
+}
+.products {
+   width: 100%;
+}
+.products ul{
+   justify-content: space-around;
+}
+.products li{
+   margin-bottom: 30px;
+}
+.page{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+}
+.footer{
+  max-width: 768px;
+}
+.footer-email{
+   padding: 30px ;
+}
+.email-text{
+   margin-bottom: 30px;
+}
+.email-text p{
+   font-size: 20px;
+}
+.email-enter{
+   width: 315px;
+}
+.email-enter input{
+   width: 45%;
+}
+.footer-info{
+   padding:40px 0px 30px 30px;
+   display: flex;
+   flex-direction: column;
+}
+.footerLogo{
+   margin-bottom: 40px;
+}
+.info-message ul{
+   margin-bottom: 37px;
+}
+.footerLinks{
+  margin-bottom: 23px;
+}
+.info-copyright h2{
+   display: none;
+}
+}
